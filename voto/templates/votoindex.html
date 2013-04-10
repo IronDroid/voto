@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block css%}
+<link rel="stylesheet" href="{{ STATIC_URL }}css/queri.css">
+{% endblock %}
+
+{% block contenido %}
+		<section>
+			<figure class="view view-first">
+				<img src="{{ STATIC_URL }}img/01_galo.jpg">
+				<div class="mask">
+					<h2>Candidato #1</h2>
+					<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                    <div class="info" onclick="Dajaxice.voto.recibir_votos(callback, {'num_can': 1})">Votar</div>
+				</div>
+			</figure>
+			<figure class="view view-first">
+				<img src="{{ STATIC_URL }}img/02_heredia.jpg">
+				<div class="mask">
+					<h2>Candidato #2</h2>
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                    <div class="info" onclick="Dajaxice.voto.recibir_votos(callback, {'num_can': 2})">Votar</div>
+				</div>
+			</figure>
+			<figure class="view view-first">
+				<img src="{{ STATIC_URL }}img/03_waldo.jpg">
+				<div class="mask">
+            		<h2>Candidato #3</h2>
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                    <div class="info" onclick="Dajaxice.voto.recibir_votos(callback, {'num_can': 3})">Votar</div>
+            	</div>
+			</figure>
+			<figure class="view view-first">
+				<img src="{{ STATIC_URL }}img/04_cuevas.jpg">
+				<div class="mask">
+					<h2>Candidato #4</h2>
+					<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+					<div class="info" onclick="Dajaxice.voto.recibir_votos(callback, {'num_can': 4})">Votar</div>
+				</div>
+			</figure>
+		</section>
+{% endblock %}

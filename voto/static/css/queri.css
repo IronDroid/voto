@@ -1,0 +1,33 @@
+@media screen and (max-width: 1000px) and (min-width: 725px){
+	figure {
+		width: 50%;
+		margin: .5em;
+	}
+	figure img{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 725px) {
+	figure {
+		width: 80%;
+		margin: .5em;
+	}
+	figure img{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 400px) {
+	.view h2 {
+		margin: 0px 0 0 0;
+		padding: 10px 25px;
+		text-align: left;
+	}
+	.view p {
+		text-align: left;
+		width: 220px;
+	}
+	.view div.info {
+		padding: .5em 1em;
+	}
+}
