@@ -2,6 +2,7 @@
 
 {% block css%}
 <link rel="stylesheet" href="{{ STATIC_URL }}css/queri.css">
+<link rel="stylesheet" href="{{ STATIC_URL }}css/cursos.css">
 {% endblock %}
 
 {% block contenido %}
@@ -11,7 +12,7 @@
 				<div class="mask">
 					<h2>Candidato #1</h2>
 					<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                    <div class="info" onclick="Dajaxice.voto.recibir_votos(callback, {'num_can': 1})">Votar</div>
+                    <div id="can1" class="info" onclick="Dajaxice.voto.recibir_votos(callback, {'num_can': 1})">Votar</div>
 				</div>
 			</figure>
 			<figure class="view view-first">
@@ -19,7 +20,7 @@
 				<div class="mask">
 					<h2>Candidato #2</h2>
                     <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                    <div class="info" onclick="Dajaxice.voto.recibir_votos(callback, {'num_can': 2})">Votar</div>
+                    <div id="can2" class="info" onclick="Dajaxice.voto.recibir_votos(callback, {'num_can': 2})">Votar</div>
 				</div>
 			</figure>
 			<figure class="view view-first">
@@ -27,7 +28,7 @@
 				<div class="mask">
             		<h2>Candidato #3</h2>
                     <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                    <div class="info" onclick="Dajaxice.voto.recibir_votos(callback, {'num_can': 3})">Votar</div>
+                    <div id="can3" class="info" onclick="Dajaxice.voto.recibir_votos(callback, {'num_can': 3})">Votar</div>
             	</div>
 			</figure>
 			<figure class="view view-first">
@@ -35,8 +36,28 @@
 				<div class="mask">
 					<h2>Candidato #4</h2>
 					<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-					<div class="info" onclick="Dajaxice.voto.recibir_votos(callback, {'num_can': 4})">Votar</div>
+					<div id="can4" class="info" onclick="Dajaxice.voto.recibir_votos(callback, {'num_can': 4})">Votar</div>
 				</div>
 			</figure>
 		</section>
+
+
+	<div class="pago" id="pago">
+		<div class="overlay animated"></div>
+
+		<div class="panel animated">
+			<h2 id="pago-status" class="card">Gracias por votar</h2>
+
+			<div class="screens">
+		        <div class="screen step active">
+		        	<h3>Seguro quieres saber quien esta ganando, no???</h3>
+		        	<h3>Vamos a verlo! :)</h3>
+		        	<button type="text">
+		        		<a href="{% url 'result' %}" type="text">Resultados</a>
+		        	</button>
+		        </div>
+			</div>
+		</div>
+	</div>
+
 {% endblock %}
