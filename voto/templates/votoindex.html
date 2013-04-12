@@ -8,7 +8,7 @@
 {% block contenido %}
 		<section>
 			<figure class="view view-first">
-				<img src="{{ STATIC_URL }}img/01_galo.jpg">
+				<img src="{{ STATIC_URL }}img/Galo.jpg">
 				<div class="mask">
 					<h2>Candidato #1</h2>
 					<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
@@ -16,7 +16,7 @@
 				</div>
 			</figure>
 			<figure class="view view-first">
-				<img src="{{ STATIC_URL }}img/02_heredia.jpg">
+				<img src="{{ STATIC_URL }}img/Heredia.jpg">
 				<div class="mask">
 					<h2>Candidato #2</h2>
                     <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
@@ -24,7 +24,7 @@
 				</div>
 			</figure>
 			<figure class="view view-first">
-				<img src="{{ STATIC_URL }}img/03_waldo.jpg">
+				<img src="{{ STATIC_URL }}img/Waldo.jpg">
 				<div class="mask">
             		<h2>Candidato #3</h2>
                     <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
@@ -32,7 +32,7 @@
             	</div>
 			</figure>
 			<figure class="view view-first">
-				<img src="{{ STATIC_URL }}img/04_cuevas.jpg">
+				<img src="{{ STATIC_URL }}img/Cuevas.jpg">
 				<div class="mask">
 					<h2>Candidato #4</h2>
 					<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
@@ -44,18 +44,17 @@
 
 	<div class="pago" id="pago">
 		<div class="overlay animated"></div>
-
 		<div class="panel animated">
-			<h2 id="pago-status" class="card">Gracias por votar</h2>
-
-			<div class="screens">
-		        <div class="screen step active">
-		        	<h3>Seguro quieres saber quien esta ganando, no???</h3>
-		        	<h3>Vamos a verlo! :)</h3>
-		        	<button type="text">
-		        		<a href="{% url 'result' %}" type="text">Resultados</a>
+			<h2>Gracias por votar, por...</h2>
+			<div class="screen active">
+				<img id="can_img">
+				<h3>Seguro quieres saber quien esta ganando, no???</h3>
+				<h3>Vamos a verlo! :)</h3>
+				<a href="{% url 'result' %}">
+					<button type="text" href="{% url 'result' %}">
+							Resultados
 		        	</button>
-		        </div>
+				</a>
 			</div>
 		</div>
 	</div>

@@ -1,7 +1,18 @@
 {% extends "base.html" %}
 {% block contenido %}
 	<section>
-		<h2>gracias por votar por: {{ votado }}</h2>
 		<h2>Resultados</h2>
+		<article class="puesto">
+			<h3>Primer Lugar {{ primero }}</h3>
+		</article>
+		<article class="puesto">
+			<h3>Segundo Lugar {{ segundo }}</h3>
+		</article>
+		<article class="puesto">
+			<h3>Tercer Lugar {{ tercero }}</h3>
+		</article>
+		<article class="puesto">
+			<h3>Cuarto Lugar {{ cuarto }}</h3>
+		</article>
 	</section>
 {% endblock %}

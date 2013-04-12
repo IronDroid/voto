@@ -26,6 +26,4 @@
         // botones para cerrar
         // $overlay.click(this.hide);
     }();
-    $('.close').click(popup.hide);
-    $('.info').click(popup.show);
  });
