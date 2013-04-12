@@ -46,6 +46,21 @@ h1{
    max-width: 1000px;
    text-align: center;
 }
+.puesto{
+   display: inline-block;
+   margin: 0 2.5em;
+   vertical-align: middle;
+}
+.puesto img{
+   transition: .25s ease-in;
+}
+.puesto img:hover{
+   transform: scale(1.1);
+}
+.social .social-btn{
+   display: inline-block;
+   margin: 6px 10px;
+}
 .view{
 	border: 5px solid #323e4a;
 	box-shadow: 3px 3px 3px #e6e6e6;
