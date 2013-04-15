@@ -1,3 +1,6 @@
+aside div{
+   vertical-align: top;
+}
 body{
    background: #04978d;
    font-family: 'Noto Sans', sans-serif;
