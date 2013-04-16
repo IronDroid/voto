@@ -1,8 +1,7 @@
-$(document).on("ready",inicio);
-function inicio () {
-	// aqui va el codigo para manipular el DOM
-	alert("pruebas");
-}
+// $(document).on("ready",inicio);
+// function inicio () {
+// 	// aqui va el codigo para manipular el DOM
+// }
 
 function callback(data){
 	popup_show(data.mensaje);
